@@ -18,7 +18,9 @@
             padding: 0;
             box-sizing: border-box;
         }
-
+body{
+    overflow: hidden;
+}
 
         .BannerSection {
             background-color: #6857A1;
@@ -436,7 +438,6 @@
                     trigger: section,
                     start: "top 100%",
                     scrub: 3,
-                    markers: true
                 }
             }).to(sectionImage, { // Target the image inside the current section
                 rotation: 360,
