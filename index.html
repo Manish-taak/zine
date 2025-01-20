@@ -5,10 +5,377 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>zine</title>
+    <style>
+        .container {
+            max-width: 1376px;
+            width: 100%;
+            padding: 0 24px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        .BannerSection {
+            background-color: #6857A1;
+        }
+
+        .bannerinnersection {
+            padding: 125px 0 21px 0;
+            position: relative;
+        }
+
+        .bannertext {
+            position: absolute;
+            top: 69px;
+            right: 0;
+            max-width: 630px;
+            width: 100%;
+        }
+
+        .bannervideo {
+            max-width: 823px;
+            width: 100%;
+        }
+
+        .conversationsection {
+            background-color: #6857A1;
+        }
+
+
+
+        .conversationinnersection {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 38px 0 0 0;
+        }
+
+        .culture_arts {
+            max-width: 96px;
+        }
+
+        .in_converstaion {
+            max-width: 140px;
+        }
+
+        .culture_arts_text,
+        .minutes,
+        .words {
+            color: white;
+            font-size: 12px;
+            font-weight: 300;
+            line-height: 148%;
+        }
+
+        .in_converstaion_text {
+            color: white;
+            font-size: 15px;
+            text-align: center;
+            line-height: 128%;
+        }
+
+        .in_converstaion_title {
+            font-weight: 700;
+            line-height: 120%;
+            color: white;
+            text-align: center;
+        }
+
+        .conversation_text_section {
+            padding: 80px 0 0 0;
+            display: flex;
+            align-items: end;
+            justify-content: space-between;
+            position: relative;
+  
+
+        }
+
+        .conversation_common_text {
+            font-size: 21px;
+            line-height: 120%;
+            color: white;
+            font-weight: 400;
+        }
+
+        .conversation_common_text_700 {
+            font-weight: 700;
+        }
+
+        .conversation_text_section_right,
+        .conversation_text_section_left {
+            max-width: 597px;
+        }
+
+        .conversation_text_section_right {
+            margin-top: 105px;
+        }
+
+        .reimagined_section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 81px;
+        }
+
+        .conversation_middle_text {
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            gap: 30px;
+            margin: 91px 0 44px 0;
+        }
+
+        .rajkumari_Section {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .conversation_heading_section {
+            max-width: 527px;
+            text-indent: 40%;
+            text-align: start;
+        }
+
+        .limited_edition {
+            border: 1px solid #E9AA2C;
+            padding: 16px 0 20px 0;
+            border-radius: 20px;
+            max-width: 424px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #E9AA2C;
+        }
+
+        .limited_edition_btn {
+            color: white;
+            background-color: #E9AA2C;
+            padding: 20px 18px;
+            border-radius: 20px;
+            max-width: 280px;
+            width: 100%;
+            outline: none;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .limited_edition_name {
+            padding: 8px 0;
+            color: #E9AA2C;
+            font-weight: 200;
+            font-style: italic;
+            font-size: 36px;
+            line-height: 91%;
+        }
+
+        .limited_editon_text {
+            color: #E9AA2C;
+            font-size: 13px;
+            font-weight: 700;
+            line-height: 91%;
+        }
+
+        .edition_parent {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .limited_edition_parent {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            padding: 81px 0;
+        }
+
+        .limited_edition_right {
+            display: flex;
+            align-items: center;
+            justify-content: end;
+        }
+
+        .limited_edition_left {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .conversation_circle {
+            position: absolute;
+            right: -30%;
+            top: -24%;
+            z-index: 99;
+        }
+
+        @media screen and (max-width:768px) {
+            .bannertext {
+                top: 40px;
+            }
+        }
+
+        @media screen and (max-width:425px) {
+            .bannerinnersection {
+                padding-top: 100px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 323px;
+            }
+
+            .bannervideo {
+                max-width: 267px;
+            }
+
+            .container {
+                padding-right: 14px;
+            }
+
+        }
+    </style>
 </head>
 
 <body>
+    <section class="BannerSection">
+        <div class="container">
+            <div class="bannerinnersection">
+                <img class="bannervideo" src="./dummyvideo.png" alt="">
+                <img class="bannertext" src="./bannertext.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="conversationsection">
+        <div class="container">
+            <div class="conversationinnersection">
+                <div class="culture_arts">
+                    <p class="culture_arts_text">ART & CULTURE
+                        PERSPECTIVES
+                        MUSIC</p>
+                </div>
+                <div class="in_converstaion">
+                    <h4 class="in_converstaion_title">
+                        In Conversation
+                    </h4>
+                    <p class="in_converstaion_text">Shivam
+                        Punjya, Ankur
+                        Tewari, Rajakumari, &
+                        Mohammad Muneem</p>
+                </div>
+                <div>
+                    <p class="words">4895 Words</p>
+                </div>
+                <div>
+                    <p class="minutes">18-minute read</p>
+                </div>
+            </div>
+            <div class="conversation_text_section">
+                <img class="conversation_circle" src="./Layer_1 (5).png" alt="">
+                <div class="conversation_text_section_left">
+                    <p class="conversation_common_text conversation_common_text_700 conversation_heading_section"> When
+                        we think of India, for
+                        diasporic Indians, there,s a subconscious affinity to thinking about
+                        the overstimulation of all our senses. As a country that, according to The Wire, has the largest
+                        diasporic population in the world at over 18 million, we've been conditioned to the contrived
+                        narratives of the smells, tastes, sights… and sounds of India.</p>
+                    <div class="conversation_middle_text">
 
+                        <p class="conversation_common_text ">The honking! The chatter of crowds! Moooooooo. But that's
+                            the
+                            problem. As we embarked on our
+                            research for this piece, we realized that the sounds of India couldn't be more averse to
+                            what
+                            we've grown with and we have some serious unlearning, and learning, to do.</p>
+                        <p class="conversation_common_text">We thought it'd be interesting to ask creators of sound -
+                            musicians, singers, and performers - a
+                            simple question: What does India sound like to them? And their responses were nuanced,
+                            complex,
+                            & eye-opening, and frankly, provided a new perspective to a tired boilerplate stereotype
+                            rooted
+                            in romanticized and Oriental characterizations.</p>
+                        <p class="conversation_common_text">We spoke* to three unique renowned individuals, each
+                            contributing to the global music industry in
+                            distinct ways, but unified through a powerful, visceral passion for a homeland: India.
+                            They're
+                            shaping the sounds of India that we're trying to learn more about.</p>
+                    </div>
+                    <div class="reimagined_section">
+
+                        <p class="conversation_common_text"><span class="conversation_common_text_700">First, we have
+                                Ankur
+                                Tewari,</span> a Brussels-born singer, songwriter, music composer, and music
+                            supervisor, who is known for his work on films such as Slumdog Millionaire, Gully Boy,
+                            Gehraiyaan, and more recently, The Archies. Ankur is the Creative Architect and producer of
+                            Coke
+                            Studios Bharat. Ankur is also the lead singer of the band The Ghalat Family, known for their
+                            “acoustic guitar-based poetic ballads with hummable melodies.”</p>
+                    </div>
+                </div>
+                <div class="conversation_text_section_right">
+                    <div class="rajkumari_Section">
+                        <p class="conversation_common_text"><span class="conversation_common_text_700">We then move into
+                                conversation with Rajakumari,</span> a multi-hyphenate, Indian-American rapper,
+                            singer, and songwriter. She is known for fusing classical Indian music with hip-hop, and
+                            more
+                            recently, pop. Rajakumari is a Grammy-nominated artist and trained Indian classical dancer.
+                            Rajakumari has collaborated with John Legend, Madhuri Dixit, A.R. Rahman, Sidhu Moosewala,
+                            and
+                            Guru Randhawa, among others, released solo work, and serves as a cultural bridge between the
+                            East and West.</p>
+                        <p class="conversation_common_text"><span class="conversation_common_text_700">Lastly, we end
+                                our
+                                conversation with Mohammad Muneem,</span> a Kashmiri singer, songwriter, and poet,
+                            who performs in Kashmiri, Urdu, and Hindi. He is the founder of the band Alif. Mohammad
+                            blends
+                            Kashmiri traditional and folk styles with contemporary Western genres, addressing themes of
+                            identity, struggle, and spirituality. He has won awards at the Dada Saheb Phalke Film
+                            Festival
+                            and the Indian Independent Music Awards. Mohammad also teaches songwriting and Urdu poetry.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="limited_edition_parent">
+                <div class="limited_edition_left">
+                    <img class="imagine_text_web" src="./Layer_1 (1).png" alt="">
+                </div>
+                <div class="limited_edition_right">
+                    <div class="limited_edition">
+                        <h3 class="limited_editon_text">READ MORE & GET YOUR</h3>
+                        <h2 class="limited_edition_name">LIMITED EDITION</h2>
+                        <h3 class="limited_editon_text">BEHNO NEW YORK ZINE</h3>
+                        <button class="limited_edition_btn">GET YOUR ZINE NOW</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis"></script>
+<script>
+    const lenis = new Lenis({
+        duration: 3,
+        easing: t => Math.min(1, 1.001 - Math.pow(2, -10 * t))
+    });
+
+    function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+</script>
 
 </html>
