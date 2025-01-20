@@ -381,9 +381,10 @@ body{
                 </div>
                 <div class="limited_edition_parent commonimgsection ">
                     <img class="layer_circle_left " src="./Layer_1 (5).png" alt="circle">
-                    <img class="layer_circle_right" src="./Layer_1 (5).png" alt="circle">
-
-                    <div class="limited_edition_left">
+                    <div class="commonimgsection">
+                        <img class="layer_circle_right " src="./Layer_1 (5).png" alt="circle">
+                    </div>
+                    <div class="limited_edition_left ">
                         <img class="imagine_text_web" src="./Layer_1 (1).png" alt="">
                     </div>
 
@@ -431,13 +432,14 @@ body{
     })
     const sections = document.querySelectorAll(`.commonimgsection`);
     sections.forEach((section) => {
-        const sectionImage = section.querySelector(".conversation_circle"); // Select the <img> inside the current section
+        const sectionImage = section.querySelector("img"); // Select the <img> inside the current section
         if (sectionImage) {
             gsap.timeline({
                 scrollTrigger: {
                     trigger: section,
-                    start: "top 100%",
+                    start: "0% 80%",
                     scrub: 3,
+                    // markers: true
                 }
             }).to(sectionImage, { // Target the image inside the current section
                 rotation: 360,

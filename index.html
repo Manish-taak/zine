@@ -92,9 +92,10 @@
             display: flex;
             align-items: end;
             justify-content: space-between;
+        }
+
+        .conversationsection {
             position: relative;
-
-
         }
 
         .conversation_common_text {
@@ -258,6 +259,7 @@
 
         .main {
             overflow: hidden;
+            position: relative;
         }
     </style>
 </head>
@@ -404,8 +406,10 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis"></script>
 <script>
+
+    // Initialize Lenis smooth scrolling
     const lenis = new Lenis({
-        duration: 3,
+        duration: 1.8,
         easing: t => Math.min(1, 1.001 - Math.pow(2, -10 * t))
     });
 
@@ -413,7 +417,6 @@
         lenis.raf(time);
         requestAnimationFrame(raf);
     }
-
     requestAnimationFrame(raf);
     gsap.timeline({
         scrollTrigger: {
