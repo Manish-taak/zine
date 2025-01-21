@@ -18,7 +18,26 @@
             padding: 0;
             box-sizing: border-box;
         }
+        .lg-info{
+            font-family: Neue Haas Grotesk Display Pro;
+            font-size: 21px;
+            font-weight: 700;
+            line-height: 25.2px;
+            text-align: left;
+            color: #ffffff;
+        }
+        .md_info{
+            font-family: Neue Haas Grotesk Display Pro;
+font-size: 21px;
+font-weight: 400;
+line-height: 25.2px;
+text-align: left;
+color: #ffffff;
 
+        }
+        .sm_info{}
+        .sm_info_title{}
+        .xsm_info{}
 
         .BannerSection {
             background-color: #6857A1;
@@ -71,6 +90,10 @@
             font-size: 12px;
             font-weight: 300;
             line-height: 148%;
+        }
+
+        .culture_arts_text {
+            font-family: "Cartograph CF";
         }
 
         .in_converstaion_text {
@@ -236,6 +259,16 @@
             .bannertext {
                 top: 40px;
             }
+            .lg-info{
+            font-size: 14px;
+            line-height: 16.8px;
+            text-align: center;
+        }
+        .md_info{
+font-size: 15px;
+line-height: 18px;
+
+        }
         }
 
         @media screen and (max-width:425px) {
@@ -266,9 +299,10 @@
 
 <body>
     <section class="main">
+        <div class="container">
         <div class="BannerSection">
             <div class="container">
-                <div class="bannerinnersection">
+                <div class="bannerinnersection ">
                     <img class="bannervideo" src="./dummyvideo.png" alt="">
                     <img class="bannertext" src="./bannertext.png" alt="">
                 </div>
@@ -278,7 +312,7 @@
             <div class="container">
                 <div class="conversationinnersection">
                     <div class="culture_arts">
-                        <p class="culture_arts_text">ART & CULTURE
+                        <p class="culture_arts_text sm_info">ART & CULTURE
                             PERSPECTIVES
                             MUSIC</p>
                     </div>
@@ -292,16 +326,16 @@
                             Mohammad Muneem</p>
                     </div>
                     <div>
-                        <p class="words">4895 Words</p>
+                        <p class="words xsm_info">4895 Words</p>
                     </div>
                     <div>
-                        <p class="minutes">18-minute read</p>
+                        <p class="minutes xsm_info">18-minute read</p>
                     </div>
                 </div>
-                <div class="conversation_text_section commonimgsection">
+                <div class="conversation_text_section info_container commonimgsection">
                     <img class="conversation_circle " src="./Layer_1 (5).png" alt="">
                     <div class="conversation_text_section_left">
-                        <p class="conversation_common_text conversation_common_text_700 conversation_heading_section">
+                        <p class="conversation_common_text conversation_common_text_700 conversation_heading_section lg-info">
                             When
                             we think of India, for
                             diasporic Indians, there,s a subconscious affinity to thinking about
@@ -312,14 +346,14 @@
                             narratives of the smells, tastes, sights… and sounds of India.</p>
                         <div class="conversation_middle_text">
 
-                            <p class="conversation_common_text ">The honking! The chatter of crowds! Moooooooo. But
+                            <p class="conversation_common_text md_info">The honking! The chatter of crowds! Moooooooo. But
                                 that's
                                 the
                                 problem. As we embarked on our
                                 research for this piece, we realized that the sounds of India couldn't be more averse to
                                 what
                                 we've grown with and we have some serious unlearning, and learning, to do.</p>
-                            <p class="conversation_common_text">We thought it'd be interesting to ask creators of sound
+                            <p class="conversation_common_text md_info">We thought it'd be interesting to ask creators of sound
                                 -
                                 musicians, singers, and performers - a
                                 simple question: What does India sound like to them? And their responses were nuanced,
@@ -327,7 +361,7 @@
                                 & eye-opening, and frankly, provided a new perspective to a tired boilerplate stereotype
                                 rooted
                                 in romanticized and Oriental characterizations.</p>
-                            <p class="conversation_common_text">We spoke* to three unique renowned individuals, each
+                            <p class="conversation_common_text md_info">We spoke* to three unique renowned individuals, each
                                 contributing to the global music industry in
                                 distinct ways, but unified through a powerful, visceral passion for a homeland: India.
                                 They're
@@ -398,6 +432,7 @@
 
                 </div>
             </div>
+        </div>
         </div>
     </section>
 
