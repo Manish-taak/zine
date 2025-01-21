@@ -543,7 +543,7 @@
                             <p class=" lg_info">We spoke* to three unique renowned individuals, each
                                 contributing to the global music industry in
                                 distinct ways, but unified through a powerful, visceral passion for a homeland: India.
-                                They're 
+                                They're
                                 shaping the sounds of India that we're trying to learn more about.</p>
                         </div>
                         <div class="reimagined_section commonimgsection">
@@ -641,7 +641,6 @@
             trigger: ".BannerSection",
             start: "0% 0%",
             scrub: true,
-            // markers: true
         }
     }).to(".bannertext", {
         rotation: 90,
@@ -650,18 +649,22 @@
     })
     const sections = document.querySelectorAll(`.commonimgsection`);
     sections.forEach((section) => {
-        const sectionImage = section.querySelector("img"); // Select the <img> inside the current section
+        const sectionImage = section.querySelector("img");
         if (sectionImage) {
             gsap.timeline({
                 scrollTrigger: {
                     trigger: section,
                     start: "0% 80%",
                     scrub: 3,
-                    // markers: true
                 }
-            }).to(sectionImage, { // Target the image inside the current section
+            }).fromTo(sectionImage, {
+                rotation: 0,
+                scale: 0.9,
+                yoyo: true,
+                ease: "expo.out",
+            }, {
                 rotation: 360,
-                scale: 1.1,
+                scale: 1,
                 duration: 2.5,
                 yoyo: true,
                 ease: "expo.out",
