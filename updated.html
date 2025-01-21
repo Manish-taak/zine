@@ -11,6 +11,7 @@
             width: 100%;
             padding: 0 24px;
             margin: 0 auto;
+
         }
 
         * {
@@ -18,13 +19,52 @@
             padding: 0;
             box-sizing: border-box;
         }
-body{
-    overflow: hidden;
-}
 
-        .BannerSection {
-            background-color: #6857A1;
+        .lg_info_title {
+            font-family: Neue Haas Grotesk Display Pro;
+            font-size: 21px;
+            font-weight: 700;
+            line-height: 120%;
+            color: #FFFFFF;
         }
+
+        .lg_info {
+            font-family: Neue Haas Grotesk Display Pro;
+            font-size: 21px;
+            font-weight: 400;
+            line-height: 120%;
+            color: #FFFFFF;
+        }
+
+        .sm_info {
+            font-family: Cartograph CF;
+            font-size: 12px;
+            font-weight: 300;
+            line-height: 148%;
+            color: #FFFFFF;
+        }
+
+        .md_info {
+            font-family: PP Editorial New;
+            font-size: 15px;
+            font-style: italic;
+            font-weight: 200;
+            line-height: 128%;
+            color: #FFFFFF;
+        }
+
+        .md_info_title {
+            font-family: Neue Haas Grotesk Display Pro;
+            font-size: 15px;
+            font-weight: 700;
+            line-height: 120%;
+            color: #FFFFFF;
+        }
+
+        body {
+            overflow: hidden;
+        }
+
 
         .bannerinnersection {
             padding: 125px 0 21px 0;
@@ -44,10 +84,6 @@ body{
             width: 100%;
         }
 
-        .conversationsection {
-            background-color: #6857A1;
-
-        }
 
 
 
@@ -66,26 +102,9 @@ body{
             max-width: 140px;
         }
 
-        .culture_arts_text,
-        .minutes,
-        .words {
-            color: white;
-            font-size: 12px;
-            font-weight: 300;
-            line-height: 148%;
-        }
 
-        .in_converstaion_text {
-            color: white;
-            font-size: 15px;
-            text-align: center;
-            line-height: 128%;
-        }
 
         .in_converstaion_title {
-            font-weight: 700;
-            line-height: 120%;
-            color: white;
             text-align: center;
         }
 
@@ -95,24 +114,26 @@ body{
             align-items: end;
             justify-content: space-between;
             position: relative;
-
-
+            gap: 20px;
         }
 
-        .conversation_common_text {
-            font-size: 21px;
-            line-height: 120%;
-            color: white;
-            font-weight: 400;
-        }
 
-        .conversation_common_text_700 {
-            font-weight: 700;
-        }
+
 
         .conversation_text_section_right,
         .conversation_text_section_left {
             max-width: 597px;
+            position: relative;
+        }
+
+        .circle_mob_left {
+            position: absolute;
+            display: none;
+        }
+
+        .circle_mob_right {
+            position: absolute;
+            display: none;
         }
 
         .conversation_text_section_right {
@@ -125,6 +146,7 @@ body{
             align-items: center;
             justify-content: center;
             gap: 81px;
+            position: relative;
         }
 
         .conversation_middle_text {
@@ -233,9 +255,137 @@ body{
             bottom: -62%;
         }
 
+        .imagine_text_mob {
+            display: none;
+        }
+
+        .mobile-view {
+            display: none;
+        }
+
+        @media screen and (max-width:1024px) {
+            .circle_layers {
+                max-width: 600px;
+                width: 100%;
+            }
+
+            .conversation_circle {
+                top: -10%;
+                right: -35%;
+            }
+
+        }
+
         @media screen and (max-width:768px) {
             .bannertext {
                 top: 40px;
+            }
+
+            .lg_info_title {
+                font-size: 18px;
+            }
+
+            .lg_info {
+                font-size: 18px;
+            }
+
+            .sm_info {
+                font-size: 10px;
+            }
+
+            .md_info {
+                font-size: 13px;
+            }
+
+            .md_info_title {
+                font-size: 13px;
+            }
+
+            .conversation_text_section {
+                flex-direction: column;
+                align-items: center;
+                gap: 0;
+            }
+
+            .limited_edition_parent {
+                grid-template-columns: 1fr;
+            }
+
+            .limited_edition_right {
+                justify-content: center;
+            }
+
+            .limited_edition_left {
+                display: none;
+            }
+
+            .imagine_text_mob {
+                display: block;
+                max-width: 338px;
+                width: 100%;
+            }
+
+            .rajkumari_Section {
+                align-items: center;
+            }
+
+            .conversation_text_section {
+                padding: 40px 0 0 0;
+            }
+
+            .conversation_middle_text {
+                margin: 50px 0 44px 0;
+            }
+
+            .conversation_text_section_right {
+                margin-top: 0;
+            }
+
+            .rajkumari_Section {
+                gap: 20px;
+                padding-top: 36px;
+            }
+
+            .limited_edition_parent {
+                padding: 78px 0 67px 0;
+            }
+
+            .circle_layers {
+                max-width: 397px;
+                width: 100%;
+            }
+
+            .reimagined_section {
+                gap: 42px;
+            }
+
+        }
+
+        @media screen and (max-width:550px) {
+            .conversation_circle {
+                top: -1%;
+                right: -35%;
+            }
+
+            .layer_circle_left {
+                left: -70%;
+            }
+
+            .layer_circle_right {
+                bottom: -75%;
+                right: -50%;
+            }
+
+            .circle_mob_left {
+                display: block;
+                top: 35%;
+                left: -35%;
+            }
+
+            .circle_mob_right {
+                display: block;
+                top: 25%;
+                right: -30%;
             }
         }
 
@@ -256,10 +406,71 @@ body{
                 padding-right: 14px;
             }
 
+            .lg_info_title {
+                font-size: 15px;
+            }
+
+            .lg_info {
+                font-size: 15px;
+            }
+
+            .sm_info {
+                font-size: 8px;
+            }
+
+            .md_info {
+                font-size: 12px;
+            }
+
+            .md_info_title {
+                font-size: 12px;
+            }
+
+            .conversation_text_section {
+                padding: 20px 0 0 0;
+            }
+
+            .conversation_middle_text {
+                margin: 26px 0 44px 0;
+                gap: 20px;
+            }
+
+            .imagine_text_mob {
+                max-width: 162px;
+            }
+
+            .desktop-view {
+                display: none;
+            }
+
+            .mobile-view {
+                display: block;
+            }
+
+            .limited_edition {
+                max-width: 264px;
+            }
+
+            .limited_edition_name {
+                font-size: 20px;
+            }
+
+            .limited_editon_text {
+                font-size: 10px;
+            }
+
+            .limited_edition_btn {
+                padding: 12px;
+                font-size: 10px;
+                max-width: 175px;
+                width: 100%;
+                margin-top: 16px;
+            }
         }
 
         .main {
             overflow: hidden;
+            background-color: #6857A1;
         }
     </style>
 </head>
@@ -278,30 +489,32 @@ body{
             <div class="container">
                 <div class="conversationinnersection">
                     <div class="culture_arts">
-                        <p class="culture_arts_text">ART & CULTURE
+                        <p class=" sm_info">ART & CULTURE
                             PERSPECTIVES
                             MUSIC</p>
                     </div>
                     <div class="in_converstaion">
-                        <h4 class="in_converstaion_title">
+                        <h4 class="in_converstaion_title md_info_title">
                             In Conversation
                         </h4>
-                        <p class="in_converstaion_text">Shivam
+                        <p class=" md_info">Shivam
                             Punjya, Ankur
                             Tewari, Rajakumari, &
                             Mohammad Muneem</p>
                     </div>
-                    <div>
-                        <p class="words">4895 Words</p>
+                    <div class="desktop-view">
+                        <p class=" sm_info">4895 Words</p>
                     </div>
                     <div>
-                        <p class="minutes">18-minute read</p>
+                        <p class="mobile-view sm_info">4895 Words</p>
+                        <p class=" sm_info">18-minute read</p>
                     </div>
                 </div>
                 <div class="conversation_text_section commonimgsection">
-                    <img class="conversation_circle " src="./Layer_1 (5).png" alt="">
+                    <img class="conversation_circle circle_layers" src="./Layer_1 (5).png" alt="">
                     <div class="conversation_text_section_left">
-                        <p class="conversation_common_text conversation_common_text_700 conversation_heading_section">
+                        <img class="circle_mob_left circle_layers" src="./Layer_1 (5).png" alt="">
+                        <p class="  conversation_heading_section lg_info_title">
                             When
                             we think of India, for
                             diasporic Indians, there,s a subconscious affinity to thinking about
@@ -312,14 +525,14 @@ body{
                             narratives of the smells, tastes, sights… and sounds of India.</p>
                         <div class="conversation_middle_text">
 
-                            <p class="conversation_common_text ">The honking! The chatter of crowds! Moooooooo. But
+                            <p class="  lg_info">The honking! The chatter of crowds! Moooooooo. But
                                 that's
                                 the
                                 problem. As we embarked on our
                                 research for this piece, we realized that the sounds of India couldn't be more averse to
                                 what
                                 we've grown with and we have some serious unlearning, and learning, to do.</p>
-                            <p class="conversation_common_text">We thought it'd be interesting to ask creators of sound
+                            <p class=" lg_info">We thought it'd be interesting to ask creators of sound
                                 -
                                 musicians, singers, and performers - a
                                 simple question: What does India sound like to them? And their responses were nuanced,
@@ -327,15 +540,17 @@ body{
                                 & eye-opening, and frankly, provided a new perspective to a tired boilerplate stereotype
                                 rooted
                                 in romanticized and Oriental characterizations.</p>
-                            <p class="conversation_common_text">We spoke* to three unique renowned individuals, each
+                            <p class=" lg_info">We spoke* to three unique renowned individuals, each
                                 contributing to the global music industry in
                                 distinct ways, but unified through a powerful, visceral passion for a homeland: India.
-                                They're
+                                They're 
                                 shaping the sounds of India that we're trying to learn more about.</p>
                         </div>
                         <div class="reimagined_section">
+                            <img class="circle_mob_right circle_layers" src="./Layer_1 (5).png" alt="">
 
-                            <p class="conversation_common_text"><span class="conversation_common_text_700">First, we
+                            <img class="imagine_text_mob" src="./Layer_1 (1).png" alt="">
+                            <p class=" lg_info"><span class=" lg_info_title">First, we
                                     have
                                     Ankur
                                     Tewari,</span> a Brussels-born singer, songwriter, music composer, and music
@@ -349,8 +564,11 @@ body{
                         </div>
                     </div>
                     <div class="conversation_text_section_right">
+
+
                         <div class="rajkumari_Section">
-                            <p class="conversation_common_text"><span class="conversation_common_text_700">We then move
+
+                            <p class=" lg_info"><span class=" lg_info_title">We then move
                                     into
                                     conversation with Rajakumari,</span> a multi-hyphenate, Indian-American rapper,
                                 singer, and songwriter. She is known for fusing classical Indian music with hip-hop, and
@@ -363,8 +581,8 @@ body{
                                 Guru Randhawa, among others, released solo work, and serves as a cultural bridge between
                                 the
                                 East and West.</p>
-                            <p class="conversation_common_text"><span class="conversation_common_text_700">Lastly, we
-                                    end
+                            <p class=" lg_info"><span class=" lg_info_title">Lastly, we
+
                                     our
                                     conversation with Mohammad Muneem,</span> a Kashmiri singer, songwriter, and poet,
                                 who performs in Kashmiri, Urdu, and Hindi. He is the founder of the band Alif. Mohammad
@@ -380,9 +598,9 @@ body{
                     </div>
                 </div>
                 <div class="limited_edition_parent commonimgsection ">
-                    <img class="layer_circle_left " src="./Layer_1 (5).png" alt="circle">
+                    <img class="layer_circle_left circle_layers" src="./Layer_1 (5).png" alt="circle">
                     <div class="commonimgsection layer_circle_right">
-                        <img src="./Layer_1 (5).png" alt="circle">
+                        <img class="circle_layers" src="./Layer_1 (5).png" alt="circle">
                     </div>
                     <div class="limited_edition_left ">
                         <img class="imagine_text_web" src="./Layer_1 (1).png" alt="">
@@ -443,7 +661,7 @@ body{
                 }
             }).to(sectionImage, { // Target the image inside the current section
                 rotation: 360,
-                scale: 1.2,
+                scale: 1.1,
                 duration: 2.5,
                 yoyo: true,
                 ease: "expo.out",
