@@ -62,7 +62,7 @@
         }
 
         body {
-            overflow: hidden;
+            /* overflow: hidden; */
         }
 
 
@@ -387,6 +387,10 @@
                 top: 25%;
                 right: -30%;
             }
+
+            .culture_arts {
+                max-width: 64px;
+            }
         }
 
         @media screen and (max-width:425px) {
@@ -402,9 +406,6 @@
                 max-width: 267px;
             }
 
-            .container {
-                padding-right: 14px;
-            }
 
             .lg_info_title {
                 font-size: 15px;
@@ -477,16 +478,14 @@
 
 <body>
     <section class="main">
-        <div class="BannerSection">
-            <div class="container">
+        <div class="container">
+            <div class="BannerSection">
                 <div class="bannerinnersection">
                     <img class="bannervideo" src="./dummyvideo.png" alt="">
                     <img class="bannertext" src="./bannertext.png" alt="">
                 </div>
             </div>
-        </div>
-        <div class="conversationsection">
-            <div class="container">
+            <div class="conversationsection">
                 <div class="conversationinnersection">
                     <div class="culture_arts">
                         <p class=" sm_info">ART & CULTURE
@@ -497,7 +496,7 @@
                         <h4 class="in_converstaion_title md_info_title">
                             In Conversation
                         </h4>
-                        <p class=" md_info">Shivam
+                        <p class="in_converstaion_title md_info">Shivam
                             Punjya, Ankur
                             Tewari, Rajakumari, &
                             Mohammad Muneem</p>
@@ -645,7 +644,6 @@
     }).to(".bannertext", {
         rotation: 90,
         duration: 2.5,
-        // ease: "expo.out",
     })
     const sections = document.querySelectorAll(`.commonimgsection`);
     sections.forEach((section) => {
@@ -667,7 +665,7 @@
                 scale: 1,
                 duration: 2.5,
                 yoyo: true,
-                
+
                 ease: "expo.out",
             });
         }
